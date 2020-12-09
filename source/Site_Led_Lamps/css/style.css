@@ -1,0 +1,89 @@
+body {
+    padding-top: 100px;
+    background-color: #202930;
+}
+a {
+    color: #fdab37
+}
+.top_banner {
+    height: 488px;
+    position: relative;
+    background-image: url(../img/top_bg_2.png);
+    padding: 100px 0 85px 0;
+    font-family: Arial, sans-serif;
+    color: #fdab37;
+    font-size: 45px;
+}
+.top_overlay {
+    background-image: url(../img/glow.png);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    top: 0;
+}
+header {
+    height: 103px;
+    background-image: url(../img/top_mnu.png);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.logo {
+    margin-top: 18px;
+    display: block;
+    padding: 0 0 0 40px;
+}
+.mnu_top {
+    float: right;
+    padding: 0px 0px 0px 90px;
+    position: absolute;
+}
+.mnu_top a {
+    font-family: sans-serif, Arial;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    text-shadow: rgba(0,0,0, .6) 1px 2px;
+}
+.mnu_top li {
+    float: left;
+    position: relative;
+}
+.mnu_top li a {
+    background-image: url(../img/separate.png);
+    display: block;
+    padding: 50px 50px 28px 60px;
+    background-repeat: repeat-y;
+}
+.mnu_top li:last-child {
+    background-image: url(../img/separate.png);
+    background-repeat: repeat-y;
+    background-position: top right;
+
+}
+.mnu_top li.active a {
+    color: #fdab37
+}
+.mnu_top .top_hover {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom: -4px;
+    width: 0;
+    left: 50%;
+    -webkit-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+}
+.mnu_top li.active .top_hover,
+.mnu_top li:hover .top_hover {
+    background-color: #fdab37;
+    width: 100%;
+    left: 0;
+}
+.mnu_top li:hover a {
+    color: #fdab37
+}
